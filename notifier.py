@@ -1,6 +1,6 @@
 # M. MARDOSZ
 #
-# For Python 2.7
+# Using Python 2.7
 #
 # Dependencies:
 # - python-twitter
@@ -9,7 +9,7 @@
 
 import twitter
 import time
-from requests.exceptions import ConnectionError
+# from requests.exceptions import ConnectionError
 import pygame
 from time import sleep
 from gtts import gTTS
@@ -18,11 +18,12 @@ import re
 
 # twitter ID instead of username
 TWITTER_ID = 25073877
-CONSUMER_KEY = 'X'
-CONSUMER_SECRET = 'X'
-ACCESS_TOKEN = 'X'
-ACCESS_TOKEN_SECRET = 'X'
+CONSUMER_KEY = 'x'
+CONSUMER_SECRET = 'x'
+ACCESS_TOKEN = 'x'
+ACCESS_TOKEN_SECRET = 'x'
 QUEUE_SIZE = 5
+
 
 class Queue:
     def __init__(self):
@@ -40,9 +41,13 @@ class Queue:
     def size(self):
         return len(self.items)
 
+
 class DoomsdayNotifier:
 
     # instantiate with key and secret
+    def __init__(self):
+        pass
+
     api = twitter.Api(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
     # new queue
@@ -104,12 +109,12 @@ class DoomsdayNotifier:
                 if tweet_queue.size() > QUEUE_SIZE:
                     # remove the oldest one
                     tweet_queue.dequeue()
-
-        except ConnectionError:
+        # for simplicity - broad exception
+        except:
             # tell the user that there is a problem with connection
             filename = 'sounds/error-connection.mp3'
 
-            print 'Attention, there is a problem with internet connection or with twitter. Will try again in a few seconds.'
+            print "There is a problem with internet connection or with twitter. Will try again in a few seconds."
 
             # print error message
             pygame.mixer.init()
@@ -120,6 +125,7 @@ class DoomsdayNotifier:
 
         # give twitter some time
         time.sleep(15)
+
 
 if __name__ == "__main__":
     app = DoomsdayNotifier()
