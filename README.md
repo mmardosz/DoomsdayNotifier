@@ -31,7 +31,7 @@ git clone https://github.com/mmardosz/DoomsdayNotifier.git
 Installing Python dependencies
 
 ```
-pip install -r requirements.txt
+sudo pip install -r requirements.txt
 ```
 
 or alternatively
