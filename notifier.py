@@ -91,7 +91,7 @@ class DoomsdayNotifier:
                     text=tweet_wo_urls.encode('unicode_escape'),
                     lang='en')
 
-                filename = 'temp/temp.mp3'
+                filename = 'temp.mp3'
 
                 # save file with speech
                 tts.save(filename)
