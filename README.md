@@ -49,6 +49,17 @@ sudo pip install requests==2.6.0
 
 ## Running ##
 
+### Updating Twitter API keys
+
+Replace 'x' with keys in notifier.py:
+
+```
+CONSUMER_KEY = 'x'
+CONSUMER_SECRET = 'x'
+ACCESS_TOKEN = 'x'
+ACCESS_TOKEN_SECRET = 'x'
+```
+
 ### Changing audio output ### 
 
 Change audio output to headphone jack. Go to ```sudo raspi-config``` and navigate to ```Advanced Options``` then ```Audio```.
