@@ -22,6 +22,12 @@ Since Sean Spicer [announced](http://www.newsweek.com/trump-tweets-spicer-offici
 
 ### Installing ### 
 
+Clone project to local user directory (user pi):
+
+```
+git clone https://github.com/mmardosz/DoomsdayNotifier.git
+```
+
 Installing Python dependencies
 
 ```
@@ -40,13 +46,6 @@ If there is an issue with gtts, use pip workaround:
 ```
 sudo pip install requests==2.6.0
 ```
-
-Clone project to local user directory (user pi):
-
-```
-git clone https://github.com/mmardosz/DoomsdayNotifier.git
-```
-
 
 ## Running ##
 
