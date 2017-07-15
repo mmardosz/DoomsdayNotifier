@@ -70,24 +70,6 @@ Run following command:
 
 ```amixer set PCM -- 100%```
 
-### Starting with each boot ### 
-
-Make ```launcher.sh``` executable:
-
-```
-chmod 755 launcher.sh
-```
-
-Create logs directory for cron
-
-```cd``` and then ```mkdir logs```
-
-Add a crontab by ```sudo crontab -e``` and add following line:
-
-```
-@reboot sh /home/pi/DoomsdayNotifier/launcher.sh >/home/pi/logs/cronlog 2>&1
-```
-
 ## Other ##
 
 ### Future improvements ### 
