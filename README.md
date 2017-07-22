@@ -1,8 +1,6 @@
 # Doomsday Notifier #
 _A simple EAS-like notifier that raises alarm whenever the President tweets. Created for fun of course._
 
-Since Sean Spicer [announced](http://www.newsweek.com/trump-tweets-spicer-official-statements-621919) that presidential tweets should be treated as official White House announcements, it sounds like a great idea to to reuse an old Raspberry Pi collecting dust in a drawer. Because, nobody knows which tweet can spark a new chain of unexpected events, having an alert system similar to Emergency Announcement System (EAS) sound great.
-
 ![Raspberry Pi in action](https://mardosz.com/git/DoomsdayNotifier/DN_01.jpg)
 
 **Bottomline:**
