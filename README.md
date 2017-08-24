@@ -1,12 +1,12 @@
 # Doomsday Notifier #
-_A simple EAS-like notifier that raises alarm whenever the President tweets. Created for fun of course._
+_A simple EAS-like notifier that goes off whenever POTUS tweets. Created for fun of course._
 
 ![Raspberry Pi in action](https://mardosz.com/git/DoomsdayNotifier/DN_01.jpg)
 
 **Bottomline:**
-* **Problem**: How to keep up with presidential tweets at any time.
+* **Problem**: How to keep up with presidential tweets.
 * **Solution**: Dust-off an old Raspberry Pi and write a simple Python script.
-* **Action**: Python script that checks @readdonaldtrump for new tweets and uses Google Voice synthesis to read them out loud.
+* **Action**: Python script that checks @realdonaldtrump for new tweets and uses Google Voice synthesis to read them out loud.
 
 ## Getting Started ##
 
@@ -75,6 +75,7 @@ Run following command:
 - Store in queue all recent tweets if tweet frequency is less than 15 seconds (API time limit)
 - Remove Emojis from strings passed to gTTS.
 - Replace EAS noise with Donald Trump's classic sound bites such as "Tremendous" or "China!" picked at random.
+- Add cron
 
 ### License ###
 This project is licensed under the MIT License - see the LICENSE.md file for details
