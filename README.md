@@ -74,7 +74,6 @@ Run following command:
 
 - Store in queue all recent tweets if tweet frequency is less than 15 seconds (API time limit)
 - Remove Emojis from strings passed to gTTS.
-- Replace EAS noise with Donald Trump's classic sound bites such as "Tremendous" or "China!" picked at random.
 - Add cron
 
 ### License ###
