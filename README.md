@@ -1,7 +1,7 @@
 # Doomsday Notifier #
 _A simple EAS-like notifier that goes off whenever POTUS tweets. Created for fun of course._
 
-![Raspberry Pi in action](https://mardosz.com/git/DoomsdayNotifier/DN_01.jpg)
+![Raspberry Pi in action](DN_01.jpg)
 
 **Bottomline:**
 * **Problem**: How to keep up with presidential tweets.
